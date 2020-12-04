@@ -97,12 +97,13 @@ def Int_inv(a, n):
 EEA(a, n) : Extended Euclidean Algorithm
  >> Inv_int와 GCD를 완전히 통합한 효율적인 유한체 역원 연산보조 알고리
 Input : 정수 a, b
-Output : 최대공약수 (a, b), a의 잉여, b의 잉여
+Output : 최대공약수 (a, b), "quot"-[a의 잉여, b의 잉여]
 
 Option
-"print" : 주어진 계산 과정에 사용된 Iter 리스트들을 출력한다.
+"quot"  : 추가적인 출력 옵션. return값으로 a와 b의 잉여값을 확인할 수 있음
+"print" : 주어진 계산 과정에 사용된 모든 Iter 리스트들을 출력한다.
 """
-def EEA(a, b, opt="normal"):
+def EEA(a, b, opt="quot"):
     
     ### Step 1. a > b 변환
     if a < b:
@@ -140,7 +141,7 @@ def EEA(a, b, opt="normal"):
         Iter_Now = Iter_Next
 
     ### Step 3. 역원 출력
-    if opt == "normal" or opt == "print":
+    if opt == "quot" or opt == "print":
         return [Iter_Now[1],
                 Iter_Last[4]-Iter_Last[3]*Iter_Now[4],
                 Iter_Last[5]-Iter_Last[3]*Iter_Now[5]]
