@@ -149,4 +149,3 @@ def EEA(a, b, opt="quot"):
         return Iter_Now[1]
 
 
-
