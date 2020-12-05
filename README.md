@@ -1,4 +1,4 @@
 # Elementary_Algebra
 
-This is a elementary algebra code file for my study
+This is a code file for my elementary algebra study
 
