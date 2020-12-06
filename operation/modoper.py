@@ -2,7 +2,7 @@
 
 
 """
-GCD(a, b) : 유클리드 알고리즘으로 a와 b의 최대공약수 구하
+GCD(a, b) : 유클리드 알고리즘으로 a와 b의 최대공약수 구하기
 Input : 정수 a, b
 Output : 최대공약수 (a, b)
 """
@@ -95,7 +95,7 @@ def Int_inv(a, n):
 
 """
 EEA(a, n) : Extended Euclidean Algorithm
- >> Inv_int와 GCD를 완전히 통합한 효율적인 유한체 역원 연산보조 알고리
+ >> Inv_int와 GCD를 완전히 통합한 효율적인 유한체 역원 연산보조 알고리즘
 Input : 정수 a, b
 Output : 최대공약수 (a, b), "quot"-[a의 잉여, b의 잉여]
 
