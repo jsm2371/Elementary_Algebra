@@ -1,4 +1,4 @@
 # Elementary_Algebra
 
-This is a code file for my elementary algebra study
+This is code files for study about fundamentals of the algorithm
 
